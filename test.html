@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test CSS</title>
+	<link href="./test.css" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+		.container{
+			width: 300px;
+			background-color: gray;
+			margin: 3rem 0;
+
+			border-radius: 5px;
+		}
+
+		.container .square{
+			width: 150px;
+			height: 70px;
+			background-color: red;
+			color: #fff;
+			font-size: 20px;
+
+			text-align: center;
+			line-height: 70px;
+
+			border-radius: 5px;
+			transition: transform 2s linear;
+		}
+
+		.container .scale:hover{
+			transform: scale(0.5) translate(300px);
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="container">
+		<div class="square scale">DIV scale</div>
+	</div>
+	<div class="container">
+		<div class="square scalexy">DIV scalexy</div>
+	</div>
+	<div class="container">
+		<div class="square scalex">DIV scalex</div>
+	</div>
+	<div class="container">
+		<div class="square scaley">DIV scaley</div>
+	</div>
+	
+
+</body>
+</html>
